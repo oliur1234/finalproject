@@ -12,7 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import junit.framework.Assert;
 
-public class finalreg {
+public class Finalreg {
 
 	public static void main(String[] args) throws InterruptedException {
 
@@ -100,7 +100,7 @@ public class finalreg {
 
 		driver.findElement(By.xpath("//*[@class='logout']")).click();
 
-		// driver.close();
+		driver.close();
 
 	}
 }

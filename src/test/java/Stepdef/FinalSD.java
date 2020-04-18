@@ -64,7 +64,7 @@ public class FinalSD {
 	@When("^User verify the  website title$")
 	public void user_verify_the_website_title() throws Throwable {
 
-		String title = driver.getTitle();
+		String title = "My account - My Store";
 		System.out.println("this is the actual title after log in" + title);
 		String expectedtitle = driver.getTitle();
 		System.out.println("this is the ecpected title: " + expectedtitle);

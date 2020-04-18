@@ -1,4 +1,4 @@
-@test001
+ @test001
 Feature: Automation
 
   Scenario: Login to the website
@@ -6,7 +6,7 @@ Feature: Automation
     When User click on the log in button
     And User enter valid email address and password
     And User click on the submit button
-    And User verify the  website title
+    And User verify the  website title 
     Then User click on the dress button
     And User print all the prices values in decending order
     And User select the second dress on that list

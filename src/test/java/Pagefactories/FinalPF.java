@@ -7,6 +7,14 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class FinalPF {
+	public WebDriver getDriver3() {
+		return driver3;
+	}
+
+	public void setDriver3(WebDriver driver3) {
+		this.driver3 = driver3;
+	}
+
 	WebDriver driver3;
 
 	public FinalPF(WebDriver driver) {
