@@ -1,4 +1,4 @@
-package Final1;
+package final1;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,11 +12,11 @@ import org.openqa.selenium.interactions.Actions;
 
 import junit.framework.Assert;
 
-public class testng {
+public class Finalreg {
 
-	public void shamim() throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException {
 
-		System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
 
@@ -93,6 +93,8 @@ public class testng {
 
 		String finalprice = "$52.99";
 		Assert.assertEquals(finalprice, totalprice);
+
+		// Thread.sleep(3000);
 
 		js.executeScript("window.scrollBy(0, -500)");
 

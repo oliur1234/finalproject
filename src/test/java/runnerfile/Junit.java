@@ -1,4 +1,4 @@
-package Runnerfile;
+package runnerfile;
 
 import org.junit.runner.RunWith;
 
@@ -7,9 +7,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features = "\\Users\\mroli\\git\\finalproject\\FinalProject\\src\\test\\resources\\Final.feature",
+@CucumberOptions(features = "src/test/resources",
 
-                  glue = { "Stepdef" },
+                  glue = { "stepdef" },
                   
                   tags = { " @test001" },
                   

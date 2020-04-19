@@ -1,4 +1,4 @@
-package Pagefactories;
+package pagefactories;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
