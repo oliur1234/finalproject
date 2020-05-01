@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import junit.framework.Assert;
 
@@ -19,6 +21,8 @@ public class Finalreg {
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
+		
+		WebDriverWait explicit = new WebDriverWait(driver, 20);
 
 		driver.get("http://automationpractice.com/index.php");
 
@@ -45,7 +49,7 @@ public class Finalreg {
 		driver.findElement(By.xpath("(//*[@title='Dresses'])[2]")).click();
 
 		js.executeScript("window.scrollBy(0, 1200)");
-
+		
 		System.out.println(driver.findElement(By.xpath("(//*[@class='price product-price'])[2]")).getText());
 
 		WebElement p1 = driver.findElement(By.xpath("(//*[@class='price product-price'])[2]"));
@@ -100,7 +104,7 @@ public class Finalreg {
 
 		driver.findElement(By.xpath("//*[@class='logout']")).click();
 
-		driver.close();
+		//driver.close();
 
 	}
 }

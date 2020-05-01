@@ -1,4 +1,4 @@
- @test001
+ @test001 @smoketest
 Feature: Automation
 
   Scenario: Login to the website

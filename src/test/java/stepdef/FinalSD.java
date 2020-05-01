@@ -85,9 +85,17 @@ public class FinalSD {
 		explicit.until(ExpectedConditions.visibilityOf(pf.getP1()));
 
 		price.add(pf.getP1().getText());
+		
+	explicit.until(ExpectedConditions.visibilityOf(pf.getP2()));
 		price.add(pf.getP2().getText());
+		
+	explicit.until(ExpectedConditions.visibilityOf(pf.getP3()));
 		price.add(pf.getP3().getText());
+		
+	explicit.until(ExpectedConditions.visibilityOf(pf.getP4()));
 		price.add(pf.getP4().getText());
+		
+	explicit.until(ExpectedConditions.visibilityOf(pf.getP5()));
 		price.add(pf.getP5().getText());
 
 		for (String allprices : price) {
@@ -104,7 +112,8 @@ public class FinalSD {
 
 	@Then("^User select the second dress on that list$")
 	public void user_select_the_second_dress_on_that_list() throws Throwable {
-		explicit.until(ExpectedConditions.elementToBeClickable(pf.getDresssecond()));
+		
+		explicit.until(ExpectedConditions.visibilityOf(pf.getDresssecond()));
 
 		action.moveToElement(pf.getDresssecond()).perform();
 
