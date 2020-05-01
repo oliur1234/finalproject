@@ -137,7 +137,7 @@ public class FinalSD {
 	@Then("^User verify the total price with shipping$")
 	public void user_verify_the_total_price_with_shipping() throws Throwable {
 		js.executeScript("window.scrollTo(0, 500)");
-
+// explicit could use
 		String totalprice = pf.getVerifytotalprice().getText();
 
 		System.out.println("verify total price : " + totalprice);
