@@ -9,11 +9,11 @@ import cucumber.api.junit.Cucumber;
 
 @CucumberOptions(features = "src/test/resources",
 
-                  glue = { "stepdef" },
+                  glue = {"stepdef"},
                   
-                  tags = { " @test001" },
+                  tags = {"@test001"},
                   
-                  plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/report/report.html" },
+                  plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/report/report.html"},
 
                   monochrome = true
 		

@@ -82,8 +82,8 @@ public class FinalSD {
 		js.executeScript("window.scrollBy(0, 900)");
 
 		ArrayList<String> price = new ArrayList<String>();
-		explicit.until(ExpectedConditions.visibilityOf(pf.getP1()));
-
+		
+	explicit.until(ExpectedConditions.visibilityOf(pf.getP1()));
 		price.add(pf.getP1().getText());
 		
 	explicit.until(ExpectedConditions.visibilityOf(pf.getP2()));
